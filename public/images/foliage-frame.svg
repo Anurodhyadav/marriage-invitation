@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" fill="none" class="w-full h-auto">
+  <defs>
+    <linearGradient id="leafGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#93af91"/>
+      <stop offset="60%" stop-color="#4d6f4b"/>
+      <stop offset="100%" stop-color="#364e35"/>
+    </linearGradient>
+    <linearGradient id="leafGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b6ceb4"/>
+      <stop offset="50%" stop-color="#769973"/>
+      <stop offset="100%" stop-color="#557552"/>
+    </linearGradient>
+    <linearGradient id="leafGolden" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e2d4a6"/>
+      <stop offset="100%" stop-color="#a49363"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left foliage cluster -->
+  <g id="left-cluster">
+    <!-- Fern leaves -->
+    <path d="M-20 -10 C30 20 60 70 80 120 C50 110 20 80 -10 50 Z" fill="url(#leafGrad1)" opacity="0.8"/>
+    <path d="M0 -30 C50 10 90 40 120 90 C80 80 40 50 10 20 Z" fill="url(#leafGrad2)" opacity="0.7"/>
+    <!-- Round eucalyptus leaves -->
+    <ellipse cx="65" cy="45" rx="18" ry="14" fill="url(#leafGrad1)" transform="rotate(35 65 45)" opacity="0.9"/>
+    <ellipse cx="95" cy="70" rx="16" ry="13" fill="url(#leafGrad2)" transform="rotate(50 95 70)" opacity="0.85"/>
+    <ellipse cx="40" cy="80" rx="16" ry="12" fill="url(#leafGrad1)" transform="rotate(20 40 80)" opacity="0.8"/>
+    <ellipse cx="80" cy="110" rx="14" ry="11" fill="url(#leafGrad2)" transform="rotate(65 80 110)" opacity="0.75"/>
+    
+    <!-- White baby breath flowers -->
+    <circle cx="55" cy="65" r="4.5" fill="#ffffff" opacity="0.95"/>
+    <circle cx="55" cy="65" r="1.5" fill="#dfbe6c"/>
+    <circle cx="85" cy="40" r="4" fill="#ffffff" opacity="0.95"/>
+    <circle cx="85" cy="40" r="1.2" fill="#dfbe6c"/>
+    <circle cx="110" cy="85" r="3.5" fill="#ffffff" opacity="0.95"/>
+    <circle cx="110" cy="85" r="1.2" fill="#dfbe6c"/>
+    <circle cx="35" cy="50" r="3" fill="#ffffff" opacity="0.9"/>
+    <circle cx="35" cy="50" r="1" fill="#dfbe6c"/>
+  </g>
+
+  <!-- Right foliage cluster (Mirrored) -->
+  <g id="right-cluster" transform="translate(400, 0) scale(-1, 1)">
+    <!-- Fern leaves -->
+    <path d="M-20 -10 C30 20 60 70 80 120 C50 110 20 80 -10 50 Z" fill="url(#leafGrad1)" opacity="0.8"/>
+    <path d="M0 -30 C50 10 90 40 120 90 C80 80 40 50 10 20 Z" fill="url(#leafGrad2)" opacity="0.7"/>
+    <!-- Round eucalyptus leaves -->
+    <ellipse cx="65" cy="45" rx="18" ry="14" fill="url(#leafGrad1)" transform="rotate(35 65 45)" opacity="0.9"/>
+    <ellipse cx="95" cy="70" rx="16" ry="13" fill="url(#leafGrad2)" transform="rotate(50 95 70)" opacity="0.85"/>
+    <ellipse cx="40" cy="80" rx="16" ry="12" fill="url(#leafGrad1)" transform="rotate(20 40 80)" opacity="0.8"/>
+    <ellipse cx="80" cy="110" rx="14" ry="11" fill="url(#leafGrad2)" transform="rotate(65 80 110)" opacity="0.75"/>
+    
+    <!-- White flowers -->
+    <circle cx="55" cy="65" r="4.5" fill="#ffffff" opacity="0.95"/>
+    <circle cx="55" cy="65" r="1.5" fill="#dfbe6c"/>
+    <circle cx="85" cy="40" r="4" fill="#ffffff" opacity="0.95"/>
+    <circle cx="85" cy="40" r="1.2" fill="#dfbe6c"/>
+    <circle cx="110" cy="85" r="3.5" fill="#ffffff" opacity="0.95"/>
+    <circle cx="110" cy="85" r="1.2" fill="#dfbe6c"/>
+    <circle cx="35" cy="50" r="3" fill="#ffffff" opacity="0.9"/>
+    <circle cx="35" cy="50" r="1" fill="#dfbe6c"/>
+  </g>
+</svg>
+

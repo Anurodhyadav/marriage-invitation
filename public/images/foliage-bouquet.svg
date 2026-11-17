@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 80" fill="none" class="w-full h-auto">
+  <defs>
+    <linearGradient id="bqLeaf1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8fae8d"/>
+      <stop offset="100%" stop-color="#466844"/>
+    </linearGradient>
+    <linearGradient id="bqLeaf2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b4cdb2"/>
+      <stop offset="100%" stop-color="#698e67"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left branching sprigs -->
+  <path d="M80 45 C60 40 40 45 20 55 C35 48 55 45 75 46 Z" fill="url(#bqLeaf1)"/>
+  <path d="M80 45 C65 30 45 25 25 30 C45 32 60 38 78 44 Z" fill="url(#bqLeaf2)"/>
+  <ellipse cx="48" cy="36" rx="9" ry="6" fill="url(#bqLeaf1)" transform="rotate(-15 48 36)"/>
+  <ellipse cx="32" cy="40" rx="8" ry="5" fill="url(#bqLeaf2)" transform="rotate(-25 32 40)"/>
+  <ellipse cx="62" cy="30" rx="8" ry="5" fill="url(#bqLeaf1)" transform="rotate(-5 62 30)"/>
+
+  <!-- Right branching sprigs -->
+  <path d="M80 45 C100 40 120 45 140 55 C125 48 105 45 85 46 Z" fill="url(#bqLeaf1)"/>
+  <path d="M80 45 C95 30 115 25 135 30 C115 32 100 38 82 44 Z" fill="url(#bqLeaf2)"/>
+  <ellipse cx="112" cy="36" rx="9" ry="6" fill="url(#bqLeaf1)" transform="rotate(15 112 36)"/>
+  <ellipse cx="128" cy="40" rx="8" ry="5" fill="url(#bqLeaf2)" transform="rotate(25 128 40)"/>
+  <ellipse cx="98" cy="30" rx="8" ry="5" fill="url(#bqLeaf1)" transform="rotate(5 98 30)"/>
+
+  <!-- Center delicate white blossoms and golden stamen -->
+  <circle cx="80" cy="40" r="7" fill="#ffffff" stroke="#ded8c8" stroke-width="0.8"/>
+  <circle cx="80" cy="40" r="2.2" fill="#d4ae56"/>
+
+  <circle cx="68" cy="42" r="5" fill="#fdfbf7" stroke="#ded8c8" stroke-width="0.8"/>
+  <circle cx="68" cy="42" r="1.6" fill="#d4ae56"/>
+
+  <circle cx="92" cy="42" r="5" fill="#fdfbf7" stroke="#ded8c8" stroke-width="0.8"/>
+  <circle cx="92" cy="42" r="1.6" fill="#d4ae56"/>
+
+  <circle cx="74" cy="48" r="3.5" fill="#ffffff"/>
+  <circle cx="86" cy="48" r="3.5" fill="#ffffff"/>
+</svg>
+

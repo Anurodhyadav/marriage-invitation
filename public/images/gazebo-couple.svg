@@ -1,0 +1,316 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 620" fill="none" class="w-full h-auto">
+  <defs>
+    <!-- Soft warm background radial glow -->
+    <radialGradient id="gazeboGlow" cx="50%" cy="55%" r="50%">
+      <stop offset="0%" stop-color="#fffdf8" stop-opacity="0.95"/>
+      <stop offset="80%" stop-color="#f5efe4" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ece4d2" stop-opacity="0"/>
+    </radialGradient>
+    
+    <!-- Gazebo stone gradients -->
+    <linearGradient id="marbleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ece7dd"/>
+      <stop offset="25%" stop-color="#fdfcf8"/>
+      <stop offset="75%" stop-color="#fdfcf8"/>
+      <stop offset="100%" stop-color="#e3ded2"/>
+    </linearGradient>
+    <linearGradient id="marbleShade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e5e0d4"/>
+      <stop offset="100%" stop-color="#cfc7b7"/>
+    </linearGradient>
+
+    <!-- Foliage greens -->
+    <linearGradient id="leafSage1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8ba888"/>
+      <stop offset="100%" stop-color="#466446"/>
+    </linearGradient>
+    <linearGradient id="leafSage2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a4bfa3"/>
+      <stop offset="100%" stop-color="#678366"/>
+    </linearGradient>
+
+    <!-- Peacock colors -->
+    <linearGradient id="peacockBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#144b94"/>
+      <stop offset="50%" stop-color="#0b306b"/>
+      <stop offset="100%" stop-color="#08214d"/>
+    </linearGradient>
+    <linearGradient id="peacockTeal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#197a7a"/>
+      <stop offset="60%" stop-color="#0d5050"/>
+      <stop offset="100%" stop-color="#083838"/>
+    </linearGradient>
+
+    <!-- Couple wedding attire -->
+    <linearGradient id="groomIvory" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#eeebe2"/>
+      <stop offset="50%" stop-color="#faf9f5"/>
+      <stop offset="100%" stop-color="#e6e1d4"/>
+    </linearGradient>
+    <linearGradient id="brideBlush" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fcecee"/>
+      <stop offset="50%" stop-color="#f7d3d8"/>
+      <stop offset="100%" stop-color="#eeb8be"/>
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faecc1"/>
+      <stop offset="60%" stop-color="#cca04c"/>
+      <stop offset="100%" stop-color="#9d7426"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient glow -->
+  <ellipse cx="250" cy="360" rx="200" ry="230" fill="url(#gazeboGlow)"/>
+
+  <!-- GAZEBO ARCHITECTURE -->
+  <g id="gazebo-structure">
+    <!-- Base plinth -->
+    <path d="M120 540 L380 540 L395 555 L105 555 Z" fill="url(#marbleGrad)" stroke="#c5bcab" stroke-width="1.2"/>
+    <rect x="95" y="555" width="310" height="12" rx="2" fill="url(#marbleShade)" stroke="#b5ab99" stroke-width="1"/>
+
+    <!-- Left Main Pillar -->
+    <g id="left-pillar">
+      <!-- Pillar base -->
+      <rect x="135" y="500" width="30" height="40" fill="url(#marbleGrad)" stroke="#c5bcab" stroke-width="1"/>
+      <!-- Pillar shaft -->
+      <rect x="140" y="270" width="20" height="230" fill="url(#marbleGrad)" stroke="#c5bcab" stroke-width="1"/>
+      <!-- Fluting lines -->
+      <line x1="145" y1="270" x2="145" y2="500" stroke="#dfd9cb" stroke-width="1"/>
+      <line x1="150" y1="270" x2="150" y2="500" stroke="#dfd9cb" stroke-width="1"/>
+      <line x1="155" y1="270" x2="155" y2="500" stroke="#dfd9cb" stroke-width="1"/>
+      <!-- Pillar capital -->
+      <path d="M133 270 L167 270 L172 255 L128 255 Z" fill="url(#marbleGrad)" stroke="#c5bcab" stroke-width="1"/>
+    </g>
+
+    <!-- Right Main Pillar -->
+    <g id="right-pillar">
+      <!-- Pillar base -->
+      <rect x="335" y="500" width="30" height="40" fill="url(#marbleGrad)" stroke="#c5bcab" stroke-width="1"/>
+      <!-- Pillar shaft -->
+      <rect x="340" y="270" width="20" height="230" fill="url(#marbleGrad)" stroke="#c5bcab" stroke-width="1"/>
+      <!-- Fluting lines -->
+      <line x1="345" y1="270" x2="345" y2="500" stroke="#dfd9cb" stroke-width="1"/>
+      <line x1="350" y1="270" x2="350" y2="500" stroke="#dfd9cb" stroke-width="1"/>
+      <line x1="355" y1="270" x2="355" y2="500" stroke="#dfd9cb" stroke-width="1"/>
+      <!-- Pillar capital -->
+      <path d="M333 270 L367 270 L372 255 L328 255 Z" fill="url(#marbleGrad)" stroke="#c5bcab" stroke-width="1"/>
+    </g>
+
+    <!-- Inner Pillars (Perspective) -->
+    <rect x="180" y="275" width="14" height="240" fill="url(#marbleGrad)" opacity="0.6"/>
+    <rect x="306" y="275" width="14" height="240" fill="url(#marbleGrad)" opacity="0.6"/>
+
+    <!-- Entablature / Archway -->
+    <path d="M120 255 L380 255 L375 240 L125 240 Z" fill="url(#marbleGrad)" stroke="#c5bcab" stroke-width="1"/>
+    <!-- Classical Rounded Arch -->
+    <path d="M150 255 C150 185 350 185 350 255" fill="none" stroke="url(#marbleGrad)" stroke-width="14"/>
+    <path d="M150 255 C150 185 350 185 350 255" fill="none" stroke="#cfc7b7" stroke-width="1.2"/>
+
+    <!-- Classical Ribbed Dome -->
+    <path d="M135 240 C140 135 240 105 250 102 C260 105 360 135 365 240 Z" fill="url(#marbleGrad)" stroke="#cfc7b7" stroke-width="1.2"/>
+    <!-- Dome ribs -->
+    <path d="M180 240 C190 160 245 110 250 102" stroke="#dfd9cc" stroke-width="1.5" fill="none"/>
+    <path d="M320 240 C310 160 255 110 250 102" stroke="#dfd9cc" stroke-width="1.5" fill="none"/>
+    <path d="M220 240 C225 155 248 108 250 102" stroke="#dfd9cc" stroke-width="1.5" fill="none"/>
+    <path d="M280 240 C275 155 252 108 250 102" stroke="#dfd9cc" stroke-width="1.5" fill="none"/>
+
+    <!-- Dome Finial / Kalash Spire -->
+    <path d="M245 102 L255 102 L252 82 L248 82 Z" fill="url(#goldAccent)"/>
+    <circle cx="250" cy="78" r="5" fill="url(#goldAccent)"/>
+    <path d="M250 73 L250 63" stroke="url(#goldAccent)" stroke-width="2"/>
+    <circle cx="250" cy="62" r="2.5" fill="#e2b450"/>
+  </g>
+
+  <!-- FLORAL GARLAND ACROSS GAZEBO -->
+  <g id="gazebo-florals">
+    <!-- Foliage arch -->
+    <path d="M125 250 Q250 195 375 250" stroke="url(#leafSage1)" stroke-width="14" stroke-linecap="round" fill="none" opacity="0.8"/>
+    <!-- Leaves along the arch -->
+    <path d="M140 245 C130 230 150 225 155 235 Z" fill="url(#leafSage2)"/>
+    <path d="M170 230 C165 215 185 215 185 228 Z" fill="url(#leafSage1)"/>
+    <path d="M205 220 C200 205 220 205 220 218 Z" fill="url(#leafSage2)"/>
+    <path d="M240 212 C240 196 260 196 260 212 Z" fill="url(#leafSage1)"/>
+    <path d="M280 218 C280 205 300 205 295 220 Z" fill="url(#leafSage2)"/>
+    <path d="M315 228 C315 215 335 215 330 230 Z" fill="url(#leafSage1)"/>
+    <path d="M345 235 C350 225 370 230 360 245 Z" fill="url(#leafSage2)"/>
+
+    <!-- White roses / blossoms along arch -->
+    <circle cx="150" cy="242" r="9" fill="#fdfcf8" stroke="#ebdccb" stroke-width="1"/>
+    <circle cx="180" cy="228" r="8" fill="#fffbf2" stroke="#ebdccb" stroke-width="1"/>
+    <circle cx="215" cy="218" r="9.5" fill="#fdfcf8" stroke="#ebdccb" stroke-width="1"/>
+    <circle cx="250" cy="212" r="11" fill="#fffaf0" stroke="#ebdccb" stroke-width="1"/>
+    <circle cx="285" cy="218" r="9.5" fill="#fdfcf8" stroke="#ebdccb" stroke-width="1"/>
+    <circle cx="320" cy="228" r="8" fill="#fffbf2" stroke="#ebdccb" stroke-width="1"/>
+    <circle cx="350" cy="242" r="9" fill="#fdfcf8" stroke="#ebdccb" stroke-width="1"/>
+
+    <!-- Rose centers -->
+    <circle cx="250" cy="212" r="4" fill="#eed9bd" opacity="0.7"/>
+    <circle cx="215" cy="218" r="3.5" fill="#eed9bd" opacity="0.7"/>
+    <circle cx="285" cy="218" r="3.5" fill="#eed9bd" opacity="0.7"/>
+
+    <!-- Vines draping down pillars -->
+    <path d="M142 260 Q135 320 144 380 Q136 430 144 480" stroke="url(#leafSage1)" stroke-width="5" fill="none" opacity="0.75"/>
+    <circle cx="138" cy="290" r="5" fill="#fffbf2" stroke="#e0d0bd"/>
+    <circle cx="140" cy="350" r="5" fill="#fffbf2" stroke="#e0d0bd"/>
+    <circle cx="139" cy="420" r="5" fill="#fffbf2" stroke="#e0d0bd"/>
+
+    <path d="M358 260 Q365 320 356 380 Q364 430 356 480" stroke="url(#leafSage1)" stroke-width="5" fill="none" opacity="0.75"/>
+    <circle cx="362" cy="290" r="5" fill="#fffbf2" stroke="#e0d0bd"/>
+    <circle cx="360" cy="350" r="5" fill="#fffbf2" stroke="#e0d0bd"/>
+    <circle cx="361" cy="420" r="5" fill="#fffbf2" stroke="#e0d0bd"/>
+  </g>
+
+  <!-- WEDDING COUPLE UNDER GAZEBO -->
+  <g id="couple">
+    <!-- GROOM (Anurodh) - LEFT -->
+    <g id="groom">
+      <!-- Traditional Dhaka Topi -->
+      <path d="M208 300 L228 296 L224 316 L204 319 Z" fill="#9c2738" stroke="#681522" stroke-width="0.8"/>
+      <!-- Dhaka pattern geometric lines -->
+      <path d="M211 303 L217 312 L221 304" stroke="#dfb45b" stroke-width="0.9" fill="none"/>
+
+      <!-- Groom Head / Face silhouette -->
+      <ellipse cx="216" cy="326" rx="9" ry="11" fill="#f1d6be"/>
+      <ellipse cx="216" cy="318" rx="9.5" ry="5" fill="#2d2017"/> <!-- Hair -->
+
+      <!-- Ivory Daura Suruwal / Sherwani -->
+      <!-- Kurta / Coat -->
+      <path d="M198 338 C202 334 230 334 234 338 L238 420 L194 420 Z" fill="url(#groomIvory)" stroke="#dcd5c4" stroke-width="1"/>
+      <!-- Collar & buttons -->
+      <line x1="216" y1="338" x2="216" y2="400" stroke="#cfc7b4" stroke-width="1.2"/>
+      <circle cx="216" cy="350" r="1.5" fill="#caa14d"/>
+      <circle cx="216" cy="365" r="1.5" fill="#caa14d"/>
+      <circle cx="216" cy="380" r="1.5" fill="#caa14d"/>
+
+      <!-- Groom Sleeves / Arms -->
+      <path d="M198 338 L188 385 L204 402 L212 390 L204 350 Z" fill="url(#groomIvory)"/>
+      <path d="M234 338 L244 380 L236 400 L226 390 L228 350 Z" fill="url(#groomIvory)"/>
+
+      <!-- Clasped hands -->
+      <ellipse cx="220" cy="402" rx="6" ry="5" fill="#f1d6be"/>
+
+      <!-- Dubo / Flower Garland (Varmala) around groom -->
+      <path d="M204 340 C206 375 210 395 218 395 C226 395 228 375 228 340" stroke="#486846" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <circle cx="218" cy="396" r="3" fill="#e03248"/>
+
+      <!-- Suruwal (Trousers) -->
+      <path d="M197 420 L195 480 L212 480 L214 430 L216 430 L218 480 L235 480 L233 420 Z" fill="url(#groomIvory)" stroke="#dcd5c4" stroke-width="0.8"/>
+      <!-- Shoes / Jutti -->
+      <path d="M192 480 Q202 480 211 484 Q196 486 192 480 Z" fill="#992b3a"/>
+      <path d="M218 484 Q228 480 238 480 Q234 486 218 484 Z" fill="#992b3a"/>
+    </g>
+
+    <!-- BRIDE (Sanjana) - RIGHT -->
+    <g id="bride">
+      <!-- Bridal Dupatta Veil (flowing behind) -->
+      <path d="M260 320 C275 320 286 350 288 470 C280 475 270 470 268 440 Z" fill="url(#brideBlush)" opacity="0.6"/>
+      <path d="M288 350 Q286 420 288 470" stroke="url(#goldAccent)" stroke-width="1.2" stroke-dasharray="3 2" fill="none"/>
+
+      <!-- Bride Head / Hair / Maang Tikka -->
+      <ellipse cx="265" cy="330" rx="8.5" ry="10" fill="#f4dbca"/>
+      <!-- Elegant hair bun -->
+      <path d="M256 328 C256 318 274 318 274 328 Z" fill="#20150e"/>
+      <ellipse cx="265" cy="324" rx="8.5" ry="6" fill="#20150e"/>
+      <!-- Maang Tikka -->
+      <line x1="265" y1="322" x2="265" y2="328" stroke="#daa538" stroke-width="1.2"/>
+      <circle cx="265" cy="328" r="1.5" fill="#cf3341"/>
+
+      <!-- Bridal Blouse (Choli) -->
+      <path d="M252 344 C256 340 274 340 278 344 L280 376 L250 376 Z" fill="url(#brideBlush)" stroke="#dca9b1" stroke-width="0.8"/>
+      <circle cx="265" cy="355" r="2" fill="#daa538"/>
+
+      <!-- Varmala around bride -->
+      <path d="M255 344 C256 370 262 388 268 388 C274 388 278 370 278 344" stroke="#486846" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <circle cx="268" cy="389" r="3" fill="#e03248"/>
+
+      <!-- Arms & Bridal Bouquet -->
+      <path d="M252 344 L244 380 L256 392 Z" fill="#f4dbca"/>
+      <path d="M278 344 L284 380 L272 392 Z" fill="#f4dbca"/>
+      <!-- Gold bangles (Chura) -->
+      <line x1="247" y1="375" x2="251" y2="378" stroke="#daa538" stroke-width="2"/>
+      <line x1="277" y1="375" x2="273" y2="378" stroke="#daa538" stroke-width="2"/>
+
+      <!-- Bouquet in hand -->
+      <circle cx="260" cy="392" r="9" fill="#fdfbf5" stroke="#ded4c3"/>
+      <circle cx="256" cy="390" r="3" fill="#f8dfe3"/>
+      <circle cx="264" cy="393" r="3" fill="#f8dfe3"/>
+      <circle cx="260" cy="395" r="3" fill="#d2e3d0"/>
+
+      <!-- Grand Bridal Lehenga Skirt -->
+      <path d="M250 376 L280 376 L308 485 L222 485 Z" fill="url(#brideBlush)" stroke="#dfa8b1" stroke-width="1"/>
+      <!-- Lehenga Embroidery / Zari Borders -->
+      <path d="M222 485 Q265 478 308 485" stroke="url(#goldAccent)" stroke-width="4" fill="none"/>
+      <path d="M226 475 Q265 469 304 475" stroke="url(#goldAccent)" stroke-width="2" fill="none"/>
+      <!-- Vertical floral embroidery motifs on lehenga -->
+      <path d="M242 410 Q240 450 236 470" stroke="#fef4f6" stroke-width="1.2" stroke-dasharray="4 3" fill="none"/>
+      <path d="M265 405 Q265 448 265 470" stroke="#fef4f6" stroke-width="1.2" stroke-dasharray="4 3" fill="none"/>
+      <path d="M288 410 Q290 450 294 470" stroke="#fef4f6" stroke-width="1.2" stroke-dasharray="4 3" fill="none"/>
+    </g>
+  </g>
+
+  <!-- PEACOCKS AND TROPICAL FOLIAGE FLANKING THE SIDES -->
+  <!-- LEFT PEACOCK -->
+  <g id="left-peacock" transform="translate(10, 0)">
+    <!-- Palm & fern background leaves -->
+    <path d="M60 520 C40 480 20 440 45 400 C50 430 65 470 70 510 Z" fill="url(#leafSage1)" opacity="0.8"/>
+    <path d="M85 530 C80 480 85 430 110 395 C105 435 100 480 90 530 Z" fill="url(#leafSage2)" opacity="0.85"/>
+    <path d="M40 540 C10 510 5 460 25 430 C30 465 45 500 55 535 Z" fill="url(#leafSage1)" opacity="0.6"/>
+
+    <!-- Royal Peacock Body -->
+    <!-- Tail feathers cascading -->
+    <path d="M90 470 C75 510 55 560 65 600 C80 570 95 530 102 490 Z" fill="url(#peacockTeal)"/>
+    <!-- Peacock eye spots -->
+    <ellipse cx="70" cy="550" rx="6" ry="10" fill="#228574" transform="rotate(-15 70 550)"/>
+    <circle cx="70" cy="550" r="3" fill="#143e80"/>
+    <circle cx="70" cy="550" r="1.2" fill="#cca64c"/>
+
+    <ellipse cx="80" cy="580" rx="5" ry="9" fill="#228574" transform="rotate(10 80 580)"/>
+    <circle cx="80" cy="580" r="2.5" fill="#143e80"/>
+
+    <!-- Peacock torso & arched neck -->
+    <path d="M92 460 C85 430 95 405 108 395 C115 390 120 395 116 405 C110 420 106 440 108 470 Z" fill="url(#peacockBlue)"/>
+    <!-- Head & Crown Crest -->
+    <circle cx="112" cy="392" r="5.5" fill="url(#peacockBlue)"/>
+    <path d="M116 392 L123 394 L117 396 Z" fill="#caa14d"/> <!-- Beak -->
+    <!-- Crest feathers -->
+    <line x1="110" y1="388" x2="106" y2="380" stroke="#144b94" stroke-width="1.2"/>
+    <line x1="112" y1="387" x2="112" y2="378" stroke="#144b94" stroke-width="1.2"/>
+    <line x1="114" y1="388" x2="117" y2="380" stroke="#144b94" stroke-width="1.2"/>
+    <circle cx="106" cy="380" r="1.5" fill="#228574"/>
+    <circle cx="112" cy="378" r="1.5" fill="#228574"/>
+    <circle cx="117" cy="380" r="1.5" fill="#228574"/>
+  </g>
+
+  <!-- RIGHT PEACOCK (Mirrored & Looking toward couple) -->
+  <g id="right-peacock" transform="translate(490, 0) scale(-1, 1)">
+    <!-- Palm & fern background leaves -->
+    <path d="M60 520 C40 480 20 440 45 400 C50 430 65 470 70 510 Z" fill="url(#leafSage1)" opacity="0.8"/>
+    <path d="M85 530 C80 480 85 430 110 395 C105 435 100 480 90 530 Z" fill="url(#leafSage2)" opacity="0.85"/>
+    <path d="M40 540 C10 510 5 460 25 430 C30 465 45 500 55 535 Z" fill="url(#leafSage1)" opacity="0.6"/>
+
+    <!-- Royal Peacock Body -->
+    <!-- Tail feathers cascading -->
+    <path d="M90 470 C75 510 55 560 65 600 C80 570 95 530 102 490 Z" fill="url(#peacockTeal)"/>
+    <!-- Peacock eye spots -->
+    <ellipse cx="70" cy="550" rx="6" ry="10" fill="#228574" transform="rotate(-15 70 550)"/>
+    <circle cx="70" cy="550" r="3" fill="#143e80"/>
+    <circle cx="70" cy="550" r="1.2" fill="#cca64c"/>
+
+    <ellipse cx="80" cy="580" rx="5" ry="9" fill="#228574" transform="rotate(10 80 580)"/>
+    <circle cx="80" cy="580" r="2.5" fill="#143e80"/>
+
+    <!-- Peacock torso & arched neck -->
+    <path d="M92 460 C85 430 95 405 108 395 C115 390 120 395 116 405 C110 420 106 440 108 470 Z" fill="url(#peacockBlue)"/>
+    <!-- Head & Crown Crest -->
+    <circle cx="112" cy="392" r="5.5" fill="url(#peacockBlue)"/>
+    <path d="M116 392 L123 394 L117 396 Z" fill="#caa14d"/> <!-- Beak -->
+    <!-- Crest feathers -->
+    <line x1="110" y1="388" x2="106" y2="380" stroke="#144b94" stroke-width="1.2"/>
+    <line x1="112" y1="387" x2="112" y2="378" stroke="#144b94" stroke-width="1.2"/>
+    <line x1="114" y1="388" x2="117" y2="380" stroke="#144b94" stroke-width="1.2"/>
+    <circle cx="106" cy="380" r="1.5" fill="#228574"/>
+    <circle cx="112" cy="378" r="1.5" fill="#228574"/>
+    <circle cx="117" cy="380" r="1.5" fill="#228574"/>
+  </g>
+</svg>
+

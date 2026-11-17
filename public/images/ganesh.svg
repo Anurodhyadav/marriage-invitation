@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" fill="none" class="w-full h-full">
+  <defs>
+    <radialGradient id="haloGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#faebd7" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#e8cf9c" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#d4af37" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf1c8"/>
+      <stop offset="50%" stop-color="#d4a34b"/>
+      <stop offset="100%" stop-color="#9a6e27"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff6ea"/>
+      <stop offset="70%" stop-color="#ebd1b5"/>
+      <stop offset="100%" stop-color="#d5b493"/>
+    </linearGradient>
+    <linearGradient id="dhotiGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#cbe0cf"/>
+      <stop offset="100%" stop-color="#7a9a80"/>
+    </linearGradient>
+    <linearGradient id="lotusPink" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fcedec"/>
+      <stop offset="100%" stop-color="#dfa4a5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Aura / Halo -->
+  <circle cx="100" cy="100" r="82" fill="url(#haloGlow)" />
+  <circle cx="100" cy="95" r="70" stroke="#d4af37" stroke-opacity="0.3" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+  <!-- Lotus Petals at Base -->
+  <g id="lotus-base">
+    <path d="M40 205 C55 190 75 190 90 205 C70 202 55 204 40 205 Z" fill="url(#lotusPink)" opacity="0.85"/>
+    <path d="M160 205 C145 190 125 190 110 205 C130 202 145 204 160 205 Z" fill="url(#lotusPink)" opacity="0.85"/>
+    <path d="M70 215 C85 195 115 195 130 215 C115 210 85 210 70 215 Z" fill="url(#lotusPink)"/>
+    <path d="M25 212 C45 202 70 205 85 218 C55 218 35 216 25 212 Z" fill="url(#lotusPink)" opacity="0.7"/>
+    <path d="M175 212 C155 202 130 205 115 218 C145 218 165 216 175 212 Z" fill="url(#lotusPink)" opacity="0.7"/>
+    <path d="M15 220 C40 215 160 215 185 220 C140 228 60 228 15 220 Z" fill="#6c8e73" opacity="0.8"/>
+  </g>
+
+  <!-- Dhoti / Legs in Padmasana -->
+  <g id="dhoti">
+    <ellipse cx="68" cy="188" rx="34" ry="16" fill="url(#dhotiGrad)"/>
+    <ellipse cx="132" cy="188" rx="34" ry="16" fill="url(#dhotiGrad)"/>
+    <!-- Fold lines in dhoti -->
+    <path d="M50 188 Q70 196 92 190" stroke="#5d7b63" stroke-width="1.2" fill="none"/>
+    <path d="M150 188 Q130 196 108 190" stroke="#5d7b63" stroke-width="1.2" fill="none"/>
+    <!-- Gold border on dhoti -->
+    <path d="M42 195 Q70 205 100 198 Q130 205 158 195" stroke="url(#goldGrad)" stroke-width="2.5" fill="none"/>
+  </g>
+
+  <!-- Big Round Belly -->
+  <ellipse cx="100" cy="155" rx="35" ry="32" fill="url(#skinGrad)" stroke="#cda986" stroke-width="0.8"/>
+  <ellipse cx="100" cy="160" rx="3" ry="2" fill="#ba9270"/>
+
+  <!-- Golden Sacred Thread (Janeu) -->
+  <path d="M80 135 C88 155 96 175 116 182" stroke="url(#goldGrad)" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+
+  <!-- Left Upper Hand (Holding Lotus / Modak) -->
+  <g>
+    <path d="M60 145 C45 135 40 115 48 100 C52 93 58 95 62 102 C60 112 62 125 72 135 Z" fill="url(#skinGrad)"/>
+    <!-- Lotus in upper left hand -->
+    <circle cx="48" cy="96" r="8" fill="url(#lotusPink)"/>
+    <path d="M44 94 Q48 85 52 94 Z" fill="#eb888d"/>
+    <path d="M48 96 L48 108" stroke="#5d7b63" stroke-width="1.8"/>
+  </g>
+
+  <!-- Right Upper Hand (Holding Parashu / Axe or Ankusha) -->
+  <g>
+    <path d="M140 145 C155 135 160 115 152 100 C148 93 142 95 138 102 C140 112 138 125 128 135 Z" fill="url(#skinGrad)"/>
+    <!-- Gold axe / flower -->
+    <circle cx="152" cy="96" r="7" fill="url(#goldGrad)"/>
+    <path d="M152 96 L152 108" stroke="url(#goldGrad)" stroke-width="2"/>
+  </g>
+
+  <!-- Lower Left Hand (Holding Bowl of Modaks / Sweets) -->
+  <g>
+    <ellipse cx="64" cy="158" rx="10" ry="8" fill="url(#skinGrad)"/>
+    <!-- Golden sweet bowl -->
+    <path d="M52 160 Q62 172 74 160 Z" fill="url(#goldGrad)"/>
+    <circle cx="59" cy="157" r="3" fill="#e8ba45"/>
+    <circle cx="64" cy="155" r="3.2" fill="#f5ce62"/>
+    <circle cx="69" cy="157" r="3" fill="#e8ba45"/>
+  </g>
+
+  <!-- Lower Right Hand (Abhaya Mudra / Blessing) -->
+  <g>
+    <path d="M136 158 C140 152 144 142 142 136 C138 132 132 133 131 140 C128 148 130 155 136 158 Z" fill="url(#skinGrad)"/>
+    <ellipse cx="136" cy="138" rx="5" ry="7" fill="url(#skinGrad)"/>
+    <circle cx="136" cy="138" r="2" fill="#c93c3c"/>
+  </g>
+
+  <!-- Golden Necklaces -->
+  <path d="M84 133 Q100 148 116 133" stroke="url(#goldGrad)" stroke-width="3" fill="none"/>
+  <path d="M88 138 Q100 154 112 138" stroke="url(#goldGrad)" stroke-width="1.8" fill="none"/>
+  <circle cx="100" cy="153" r="3" fill="#c93c3c"/>
+
+  <!-- Elephant Ears -->
+  <!-- Left Ear -->
+  <path d="M80 85 C50 65 30 85 40 115 C46 128 62 132 78 122 Z" fill="url(#skinGrad)" stroke="#cda986" stroke-width="1"/>
+  <path d="M72 90 C55 80 48 95 54 112 C58 118 66 118 72 114 Z" fill="#f7e1cf" opacity="0.8"/>
+  <!-- Right Ear -->
+  <path d="M120 85 C150 65 170 85 160 115 C154 128 138 132 122 122 Z" fill="url(#skinGrad)" stroke="#cda986" stroke-width="1"/>
+  <path d="M128 90 C145 80 152 95 146 112 C142 118 134 118 128 114 Z" fill="#f7e1cf" opacity="0.8"/>
+
+  <!-- Head -->
+  <ellipse cx="100" cy="98" rx="28" ry="24" fill="url(#skinGrad)"/>
+
+  <!-- Trunk with curve -->
+  <path d="M94 105 C92 125 76 138 72 150 C70 156 75 164 84 163 C90 162 93 155 94 148 C96 134 106 122 106 105 Z" fill="url(#skinGrad)" stroke="#cda986" stroke-width="0.8"/>
+  <!-- Trunk tip reaching toward the modak -->
+  <circle cx="76" cy="156" r="3" fill="url(#goldGrad)"/>
+
+  <!-- Tusks -->
+  <!-- Right full tusk -->
+  <path d="M110 115 L118 121 L112 122 Z" fill="#fffef8" stroke="#d5b493" stroke-width="0.5"/>
+  <!-- Left broken tusk (symbol of Ekadanta) -->
+  <path d="M90 115 L85 119 L88 120 Z" fill="#fffef8" stroke="#d5b493" stroke-width="0.5"/>
+
+  <!-- Gentle Kind Eyes -->
+  <path d="M84 94 Q90 91 94 95" stroke="#4a3728" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M106 95 Q110 91 116 94" stroke="#4a3728" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <ellipse cx="89" cy="95" rx="1.5" ry="1.2" fill="#4a3728"/>
+  <ellipse cx="111" cy="95" rx="1.5" ry="1.2" fill="#4a3728"/>
+
+  <!-- Tilak / Trishul on Forehead -->
+  <path d="M98 75 L102 75 L101 92 L99 92 Z" fill="#c93c3c"/>
+  <path d="M93 80 Q100 86 107 80" stroke="url(#goldGrad)" stroke-width="2" fill="none"/>
+  <circle cx="100" cy="85" r="2.2" fill="#e8ba45"/>
+
+  <!-- Ornate Golden Mukut (Crown) -->
+  <g id="crown">
+    <path d="M78 80 C82 60 92 42 100 32 C108 42 118 60 122 80 Z" fill="url(#goldGrad)" stroke="#a1782f" stroke-width="1"/>
+    <!-- Crown filigree -->
+    <path d="M84 76 Q100 70 116 76" stroke="#fff4cf" stroke-width="1.5" fill="none"/>
+    <path d="M88 64 Q100 58 112 64" stroke="#fff4cf" stroke-width="1.5" fill="none"/>
+    <circle cx="100" cy="52" r="3" fill="#c93c3c"/>
+    <circle cx="100" cy="30" r="4" fill="url(#goldGrad)"/>
+    <path d="M100 24 L100 28" stroke="url(#goldGrad)" stroke-width="2"/>
+    <circle cx="88" cy="62" r="2" fill="#588b64"/>
+    <circle cx="112" cy="62" r="2" fill="#588b64"/>
+  </g>
+</svg>
+

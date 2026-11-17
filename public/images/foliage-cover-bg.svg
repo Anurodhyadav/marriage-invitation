@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 1000" fill="none" class="w-full h-full">
+  <defs>
+    <linearGradient id="cLeaf1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#93b092"/>
+      <stop offset="60%" stop-color="#4d6f4b"/>
+      <stop offset="100%" stop-color="#344d32"/>
+    </linearGradient>
+    <linearGradient id="cLeaf2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b6ceb4"/>
+      <stop offset="50%" stop-color="#739770"/>
+      <stop offset="100%" stop-color="#4d6c4a"/>
+    </linearGradient>
+    <linearGradient id="cStem" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#88a586"/>
+      <stop offset="100%" stop-color="#455d44"/>
+    </linearGradient>
+  </defs>
+
+  <!-- TOP-LEFT BOTANICAL CORNER -->
+  <g id="top-left">
+    <path d="M-40 -40 Q80 120 180 140" stroke="url(#cStem)" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="60" cy="40" rx="28" ry="20" fill="url(#cLeaf1)" transform="rotate(25 60 40)" opacity="0.85"/>
+    <ellipse cx="110" cy="85" rx="25" ry="18" fill="url(#cLeaf2)" transform="rotate(45 110 85)" opacity="0.8"/>
+    <ellipse cx="150" cy="120" rx="22" ry="16" fill="url(#cLeaf1)" transform="rotate(30 150 120)" opacity="0.85"/>
+    <ellipse cx="40" cy="110" rx="26" ry="18" fill="url(#cLeaf2)" transform="rotate(15 40 110)" opacity="0.8"/>
+    <ellipse cx="80" cy="160" rx="20" ry="14" fill="url(#cLeaf1)" transform="rotate(50 80 160)" opacity="0.75"/>
+    <circle cx="90" cy="110" r="7" fill="#ffffff" opacity="0.95"/>
+    <circle cx="90" cy="110" r="2" fill="#d4ae56"/>
+    <circle cx="130" cy="70" r="6" fill="#ffffff" opacity="0.95"/>
+    <circle cx="130" cy="70" r="1.8" fill="#d4ae56"/>
+  </g>
+
+  <!-- TOP-RIGHT BOTANICAL CORNER -->
+  <g id="top-right" transform="translate(600, 0) scale(-1, 1)">
+    <path d="M-40 -40 Q80 120 180 140" stroke="url(#cStem)" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="60" cy="40" rx="28" ry="20" fill="url(#cLeaf1)" transform="rotate(25 60 40)" opacity="0.85"/>
+    <ellipse cx="110" cy="85" rx="25" ry="18" fill="url(#cLeaf2)" transform="rotate(45 110 85)" opacity="0.8"/>
+    <ellipse cx="150" cy="120" rx="22" ry="16" fill="url(#cLeaf1)" transform="rotate(30 150 120)" opacity="0.85"/>
+    <ellipse cx="40" cy="110" rx="26" ry="18" fill="url(#cLeaf2)" transform="rotate(15 40 110)" opacity="0.8"/>
+    <ellipse cx="80" cy="160" rx="20" ry="14" fill="url(#cLeaf1)" transform="rotate(50 80 160)" opacity="0.75"/>
+    <circle cx="90" cy="110" r="7" fill="#ffffff" opacity="0.95"/>
+    <circle cx="90" cy="110" r="2" fill="#d4ae56"/>
+    <circle cx="130" cy="70" r="6" fill="#ffffff" opacity="0.95"/>
+    <circle cx="130" cy="70" r="1.8" fill="#d4ae56"/>
+  </g>
+
+  <!-- BOTTOM-LEFT BOTANICAL CORNER -->
+  <g id="bottom-left" transform="translate(0, 1000) scale(1, -1)">
+    <path d="M-40 -40 Q80 120 180 140" stroke="url(#cStem)" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="60" cy="40" rx="28" ry="20" fill="url(#cLeaf1)" transform="rotate(25 60 40)" opacity="0.85"/>
+    <ellipse cx="110" cy="85" rx="25" ry="18" fill="url(#cLeaf2)" transform="rotate(45 110 85)" opacity="0.8"/>
+    <ellipse cx="150" cy="120" rx="22" ry="16" fill="url(#cLeaf1)" transform="rotate(30 150 120)" opacity="0.85"/>
+    <ellipse cx="40" cy="110" rx="26" ry="18" fill="url(#cLeaf2)" transform="rotate(15 40 110)" opacity="0.8"/>
+    <ellipse cx="80" cy="160" rx="20" ry="14" fill="url(#cLeaf1)" transform="rotate(50 80 160)" opacity="0.75"/>
+    <circle cx="90" cy="110" r="7" fill="#ffffff" opacity="0.95"/>
+    <circle cx="90" cy="110" r="2" fill="#d4ae56"/>
+    <circle cx="130" cy="70" r="6" fill="#ffffff" opacity="0.95"/>
+    <circle cx="130" cy="70" r="1.8" fill="#d4ae56"/>
+  </g>
+
+  <!-- BOTTOM-RIGHT BOTANICAL CORNER -->
+  <g id="bottom-right" transform="translate(600, 1000) scale(-1, -1)">
+    <path d="M-40 -40 Q80 120 180 140" stroke="url(#cStem)" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="60" cy="40" rx="28" ry="20" fill="url(#cLeaf1)" transform="rotate(25 60 40)" opacity="0.85"/>
+    <ellipse cx="110" cy="85" rx="25" ry="18" fill="url(#cLeaf2)" transform="rotate(45 110 85)" opacity="0.8"/>
+    <ellipse cx="150" cy="120" rx="22" ry="16" fill="url(#cLeaf1)" transform="rotate(30 150 120)" opacity="0.85"/>
+    <ellipse cx="40" cy="110" rx="26" ry="18" fill="url(#cLeaf2)" transform="rotate(15 40 110)" opacity="0.8"/>
+    <ellipse cx="80" cy="160" rx="20" ry="14" fill="url(#cLeaf1)" transform="rotate(50 80 160)" opacity="0.75"/>
+    <circle cx="90" cy="110" r="7" fill="#ffffff" opacity="0.95"/>
+    <circle cx="90" cy="110" r="2" fill="#d4ae56"/>
+    <circle cx="130" cy="70" r="6" fill="#ffffff" opacity="0.95"/>
+    <circle cx="130" cy="70" r="1.8" fill="#d4ae56"/>
+  </g>
+</svg>
+
