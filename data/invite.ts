@@ -162,7 +162,7 @@ export const inviteData: WeddingData = {
     englishQuote: "Your presence will be the greatest gift to us.",
   },
   music: {
-    src: "/audio/wedding-flute.mp3",
+    src: "/audio/chup-mahi.mp3",
     title: "Mangal Dhun / Wedding Sitar & Flute",
   },
 };
