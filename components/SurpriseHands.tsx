@@ -1,20 +1,18 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 /**
  * SurpriseHands: "Surprise For You!" wedding-invite section.
- * Joined hands (SVG) -> girl's fingers sway; both rings sparkle repeatedly, forever.
- * No dependencies besides React. Animations run automatically on mount.
- *
- * Usage:
- *   <SurpriseHands date="11th December, 2026" eventName="WEDDING CEREMONY" />
+ * Joined hands (SVG) -> girl's fingers sway; rings sparkle frequently with radiant bursts.
+ * Live countdown timer ticking down to the wedding day inside the maroon ticket.
  */
 
 export interface SurpriseHandsProps {
   title?: string;
   subtitle?: string;
   date?: string;
+  targetDate?: string;
   eventName?: string;
   blessing?: string;
   className?: string;
@@ -35,33 +33,177 @@ const FONT_URL =
   "https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap";
 
 const css = `
-.hj-root{--hj-maroon:#6B2D35;--hj-rose:#8C6068;--hj-cream:#F5EEE6;
-  background:var(--hj-cream);color:var(--hj-maroon);
-  font-family:'Cormorant Garamond',Georgia,serif;text-align:center;
-  max-width:420px;margin:0 auto;padding:16px 20px 40px;box-sizing:border-box}
-.hj-svg{width:100%;max-width:400px;height:auto;display:block;margin:0 auto;overflow:visible}
-.hj-p{fill:var(--hj-maroon);fill-rule:evenodd}
-.hj-title{font-family:'Great Vibes','Brush Script MT',cursive;font-weight:400;font-size:3rem;margin:4px 0 0}
-.hj-sub{font-size:1.25rem;margin:0 0 18px}
-.hj-ticket{background:linear-gradient(135deg,#9a6c74,#7a525a);color:#FFF8EC;border-radius:14px;padding:18px 12px;box-shadow:0 10px 24px rgba(107,45,53,.25)}
-.hj-ticket b{display:block;font-size:1.25rem;font-weight:400;font-variant-numeric:lining-nums;margin-bottom:4px}
-.hj-ticket span{letter-spacing:.3em;font-size:.8rem}
-.hj-bless{font-style:italic;font-size:1.15rem;margin:22px 8px 0}
-.hj-fade{opacity:0;animation:hj-up .7s ease forwards}
-.hj-f1{animation-delay:.3s}.hj-f2{animation-delay:.5s}.hj-f3{animation-delay:.7s}.hj-f4{animation-delay:.9s}
-@keyframes hj-up{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
-.hj-band{animation:hj-sway 3.6s 1.7s ease-in-out both}
-@keyframes hj-sway{0%{transform:translateX(0)}25%{transform:translateX(calc(var(--a)*2.8px))}50%{transform:translateX(calc(var(--a)*.6px))}75%{transform:translateX(calc(var(--a)*2.4px))}100%{transform:translateX(0)}}
-.hj-sp{opacity:0;transform-box:fill-box;transform-origin:center;animation:hj-spark 3.2s ease-out infinite}
-@keyframes hj-spark{0%{opacity:0;transform:scale(.1) rotate(0)}12%{opacity:1;transform:scale(1.38) rotate(45deg)}40%{opacity:0;transform:scale(.3) rotate(90deg)}100%{opacity:0;transform:scale(.3) rotate(90deg)}}
-@media (prefers-reduced-motion:reduce){.hj-band,.hj-sp{animation:none!important}.hj-fade{opacity:1!important;animation:none!important}}
+.hj-root {
+  --hj-maroon: #6B2D35;
+  --hj-rose: #8C6068;
+  --hj-cream: #F5EEE6;
+  background: var(--hj-cream);
+  color: var(--hj-maroon);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  text-align: center;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 16px 20px 40px;
+  box-sizing: border-box;
+}
+
+.hj-svg {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.hj-p {
+  fill: var(--hj-maroon);
+  fill-rule: evenodd;
+}
+
+.hj-title {
+  font-family: 'Great Vibes', 'Brush Script MT', cursive;
+  font-weight: 400;
+  font-size: 3.1rem;
+  margin: 4px 0 0;
+  filter: drop-shadow(0 1px 1px rgba(255, 255, 255, 0.7));
+}
+
+.hj-sub {
+  font-size: 1.25rem;
+  margin: 0 0 18px;
+  color: #7A3340;
+}
+
+.hj-ticket {
+  background: linear-gradient(135deg, #9a6c74, #7a525a);
+  color: #FFF8EC;
+  border-radius: 16px;
+  padding: 16px 14px 14px;
+  box-shadow: 0 10px 24px rgba(107, 45, 53, 0.25);
+  margin: 0 auto;
+  max-width: 380px;
+}
+
+.hj-timer-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.hj-time-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 46px;
+}
+
+.hj-time-val {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+.hj-time-lbl {
+  font-size: 0.65rem;
+  letter-spacing: 0.16em;
+  opacity: 0.85;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+.hj-time-sep {
+  font-size: 1.3rem;
+  font-weight: 300;
+  opacity: 0.6;
+  margin-bottom: 12px;
+}
+
+.hj-ticket-sub {
+  display: block;
+  letter-spacing: .25em;
+  font-size: .78rem;
+  opacity: 0.95;
+  border-top: 1px solid rgba(255, 248, 236, 0.2);
+  padding-top: 8px;
+  margin-top: 4px;
+}
+
+.hj-bless {
+  font-style: italic;
+  font-size: 1.15rem;
+  margin: 22px 8px 0;
+  color: #5A252C;
+}
+
+.hj-fade {
+  opacity: 0;
+  animation: hj-up .7s ease forwards;
+}
+
+.hj-f1 { animation-delay: .3s; }
+.hj-f2 { animation-delay: .5s; }
+.hj-f3 { animation-delay: .7s; }
+.hj-f4 { animation-delay: .9s; }
+
+@keyframes hj-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+
+.hj-band {
+  animation: hj-sway 3.6s 1.7s ease-in-out both;
+}
+
+@keyframes hj-sway {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(calc(var(--a) * 2.8px)); }
+  50% { transform: translateX(calc(var(--a) * .6px)); }
+  75% { transform: translateX(calc(var(--a) * 2.4px)); }
+  100% { transform: translateX(0); }
+}
+
+/* Frequent, radiant ring sparkle animation (~1.6s rapid cycle) */
+.hj-sp {
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: hj-spark 1.6s ease-out infinite;
+}
+
+@keyframes hj-spark {
+  0% { opacity: 0; transform: scale(.1) rotate(0deg); }
+  22% { opacity: 1; transform: scale(1.35) rotate(45deg); }
+  50% { opacity: 0; transform: scale(.25) rotate(90deg); }
+  100% { opacity: 0; transform: scale(.25) rotate(90deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hj-band, .hj-sp { animation: none !important; }
+  .hj-fade { opacity: 1 !important; animation: none !important; }
+}
 `;
 
-function Sparkle({ x, y, delay }: { x: number; y: number; delay: number }) {
+function Sparkle({
+  x,
+  y,
+  delay,
+  scale = 1,
+}: {
+  x: number;
+  y: number;
+  delay: number;
+  scale?: number;
+}) {
   return (
-    <g transform={`translate(${x} ${y})`}>
+    <g transform={`translate(${x} ${y}) scale(${scale})`}>
       <g className="hj-sp" style={{ animationDelay: `${delay}s` }}>
-        <path d={STAR} fill="#C9A96E" />
+        <path d={STAR} fill="#D9A23A" />
         <path d={STAR} transform="scale(.55)" fill="#fff" />
         <circle r="3" fill="#fff" />
       </g>
@@ -70,14 +212,15 @@ function Sparkle({ x, y, delay }: { x: number; y: number; delay: number }) {
 }
 
 export default function SurpriseHands({
-  title = "Surprise For You!",
-  subtitle = "Save our special day",
+  title = "Our Special Day!",
+  subtitle = "Counting down to forever",
   date = "11th December, 2026",
+  targetDate = "2026-12-11T10:00:00",
   eventName = "WEDDING CEREMONY",
-  blessing = "With the heartfelt blessings of our families and the love of our dear ones,",
+  blessing = "With the heartfelt blessings of our families and the love of our dear ones, we begin a beautiful new chapter together.",
   className = "",
 }: SurpriseHandsProps) {
-  // Load the Google Fonts once
+  // Load Google Fonts once
   useEffect(() => {
     if (document.getElementById("hj-fonts")) return;
     const link = document.createElement("link");
@@ -87,6 +230,34 @@ export default function SurpriseHands({
     document.head.appendChild(link);
   }, []);
 
+  // Live countdown timer state
+  const [timeLeft, setTimeLeft] = useState<{
+    days: number;
+    hours: number;
+    minutes: number;
+    seconds: number;
+  }>({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+
+  useEffect(() => {
+    const target = new Date(targetDate).getTime();
+
+    const calculateTime = () => {
+      const now = Date.now();
+      const diff = Math.max(0, target - now);
+
+      setTimeLeft({
+        days: Math.floor(diff / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((diff / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((diff / (1000 * 60)) % 60),
+        seconds: Math.floor((diff / 1000) % 60),
+      });
+    };
+
+    calculateTime();
+    const intervalId = setInterval(calculateTime, 1000);
+    return () => clearInterval(intervalId);
+  }, [targetDate]);
+
   return (
     <section className={`hj-root ${className}`.trim()}>
       <style>{css}</style>
@@ -95,7 +266,7 @@ export default function SurpriseHands({
         className="hj-svg"
         viewBox="0 0 580 490"
         role="img"
-        aria-label="Two joined hands, each wearing a ring"
+        aria-label="Two joined hands, each wearing a ring with frequent sparkles"
       >
         <defs>
           <path id="hj-girl" className="hj-p" d={GIRL_PATH} />
@@ -132,17 +303,55 @@ export default function SurpriseHands({
           );
         })}
 
-        {/* Ring sparkles: repeat forever (cycle length is set in .hj-sp, 3.2s) */}
-        <Sparkle x={275} y={317} delay={0.3} />
-        <Sparkle x={370} y={338} delay={0.6} />
+        {/* 
+          Ring sparkles: Staggered bursts on boy's ring and girl's ring 
+          sparkling frequently and continuously every ~0.4s
+        */}
+        {/* Boy's Ring Sparkles */}
+        <Sparkle x={275} y={317} delay={0.1} scale={1.1} />
+        <Sparkle x={272} y={320} delay={0.9} scale={0.75} />
+
+        {/* Girl's Ring Sparkles */}
+        <Sparkle x={370} y={338} delay={0.5} scale={1.2} />
+        <Sparkle x={374} y={335} delay={1.3} scale={0.8} />
       </svg>
 
       <h1 className="hj-title hj-fade hj-f1">{title}</h1>
       <p className="hj-sub hj-fade hj-f2">{subtitle}</p>
+
+      {/* Maroon Ticket with Live Countdown Timer instead of static date */}
       <div className="hj-ticket hj-fade hj-f3">
-        <b>{date}</b>
-        <span>{eventName}</span>
+        <div className="hj-timer-row">
+          <div className="hj-time-unit">
+            <span className="hj-time-val">{timeLeft.days}</span>
+            <span className="hj-time-lbl">DAYS</span>
+          </div>
+          <span className="hj-time-sep">:</span>
+          <div className="hj-time-unit">
+            <span className="hj-time-val">
+              {String(timeLeft.hours).padStart(2, "0")}
+            </span>
+            <span className="hj-time-lbl">HOURS</span>
+          </div>
+          <span className="hj-time-sep">:</span>
+          <div className="hj-time-unit">
+            <span className="hj-time-val">
+              {String(timeLeft.minutes).padStart(2, "0")}
+            </span>
+            <span className="hj-time-lbl">MINS</span>
+          </div>
+          <span className="hj-time-sep">:</span>
+          <div className="hj-time-unit">
+            <span className="hj-time-val">
+              {String(timeLeft.seconds).padStart(2, "0")}
+            </span>
+            <span className="hj-time-lbl">SECS</span>
+          </div>
+        </div>
+
+        <span className="hj-ticket-sub">{eventName}</span>
       </div>
+
       <p className="hj-bless hj-fade hj-f4">{blessing}</p>
     </section>
   );

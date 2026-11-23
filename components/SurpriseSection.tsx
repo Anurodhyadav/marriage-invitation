@@ -16,7 +16,7 @@ export default function SurpriseSection({
 }: SurpriseSectionProps) {
   return (
     <SurpriseHands
-      title="Surprise For You!"
+      title="Our Special day!"
       subtitle="Save our special day"
       date={date}
       eventName={eventName}
