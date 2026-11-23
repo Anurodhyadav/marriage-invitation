@@ -120,6 +120,18 @@ export const inviteData: WeddingData = {
     title: "The celebrations",
     events: [
       {
+        id: "matkor",
+        badgeDate: "21 MANGSIR",
+        title: "Matkor",
+        fullDate: "Thursday, 21st Mangsir 2083",
+        time: "4:00 pm – 8:00 pm",
+        description: "Henna, songs and the women of both families.",
+        venue: "Piradi Chowk, Janakpur",
+        mapUrl: "https://maps.app.goo.gl/41C52SgZAPXHz4q58",
+        dressCodeText: "Shades of green",
+        dressCodePalette: ["#4a6147", "#859c6c", "#d5c89f"],
+      },
+      {
         id: "mehendi",
         badgeDate: "10 DEC",
         title: "Mehendi",
