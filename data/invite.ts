@@ -1,11 +1,11 @@
 export interface EventItem {
   id: string;
-  badgeDate: string; // e.g. "9 FEB"
+  badgeDate: string; // e.g. "10 DEC"
   title: string; // e.g. "Mehendi"
-  fullDate: string; // e.g. "Tuesday, 9 February 2027"
+  fullDate: string; // e.g. "Thursday, 10 December 2026"
   time: string; // e.g. "3:00 pm – 8:00 pm"
   description: string;
-  venue: string; // e.g. "Katwal Niwas, Baluwatar"
+  venue: string; // e.g. "Piradi Chowk, Janakpur"
   mapUrl: string;
   dressCodeText: string; // e.g. "Shades of green"
   dressCodePalette: string[]; // 3 hex colors e.g. ["#2d5a27", "#768c4a", "#dfcf98"]
@@ -15,8 +15,8 @@ export interface FamilyPerson {
   role: string; // "THE BRIDE" or "THE GROOM"
   name: string;
   relation: string; // "Daughter of" or "Son of"
-  parents: string; // e.g. "Mr. Ram Bahadur Katwal & Mrs. Sita Katwal"
-  location: string; // e.g. "Baluwatar, Kathmandu"
+  parents: string; // e.g. "Shree Jibachh Yadav & Mrs. Ambika Yadav"
+  location: string; // e.g. "Sabaila 11, Inarwa"
 }
 
 export interface WeddingData {
@@ -28,17 +28,27 @@ export interface WeddingData {
     hashtag: string;
   };
   cover: {
-    blessing: string; // "शुभ विवाह"
-    invitationNote: string;
-    openWithMusicButton: string;
-    openWithoutMusicLink: string;
+    headerTop: string; // "TOGETHER"
+    headerSub: string; // "WITH THEIR FAMILIES"
+    requestLine1: string; // "REQUEST THE PLEASURE OF YOUR COMPANY"
+    requestLine2: string; // "AT THE CEREMONY OF THEIR WEDDING"
+    dayOfWeek: string; // "FRI"
+    month: string; // "DEC"
+    dayNumber: string; // "11"
+    year: string; // "2026"
+    yearInWords: string; // "TWO THOUSAND TWENTY SIX"
+    timeInWords: string; // "AT TEN O'CLOCK IN THE MORNING"
+    venueName: string; // "PIRADI CHOWK"
+    venueLocation: string; // "JANAKPUR, NEPAL"
+    receptionNote: string; // "reception to follow"
+    openWithMusicButton: string; // "OPEN THE INVITATION"
+    openWithoutMusicLink: string; // "Open without music"
   };
   hero: {
-    shreeGanesh: string; // "॥ श्री गणेशाय नमः ॥"
     shubhaBibaha: string; // "शुभ विवाह"
     introText: string;
-    weddingDateEnglish: string; // "FRIDAY · 12 FEBRUARY 2027"
-    weddingDateNepali: string; // "29 Magh 2083 B.S."
+    weddingDateEnglish: string; // "FRIDAY · 11 DECEMBER 2026"
+    weddingDateNepali: string; // "25 Mangsir 2083 B.S."
   };
   families: {
     sectionTitle: string; // "With the blessings of our families"
@@ -69,13 +79,23 @@ export const inviteData: WeddingData = {
     hashtag: "#AnurodhWedsSanjana",
   },
   cover: {
-    blessing: "शुभ विवाह",
-    invitationNote: "You are invited to our wedding",
+    headerTop: "TOGETHER",
+    headerSub: "WITH THEIR FAMILIES",
+    requestLine1: "REQUEST THE PLEASURE OF YOUR COMPANY",
+    requestLine2: "AT THE CEREMONY OF THEIR WEDDING",
+    dayOfWeek: "FRI",
+    month: "DEC",
+    dayNumber: "11",
+    year: "2026",
+    yearInWords: "TWO THOUSAND TWENTY SIX",
+    timeInWords: "AT TEN O'CLOCK IN THE MORNING",
+    venueName: "PIRADI CHOWK",
+    venueLocation: "JANAKPUR, NEPAL",
+    receptionNote: "reception to follow",
     openWithMusicButton: "OPEN THE INVITATION",
     openWithoutMusicLink: "Open without music",
   },
   hero: {
-    shreeGanesh: "॥ श्री गणेशाय नमः ॥",
     shubhaBibaha: "शुभ विवाह",
     introText: "Together with their families, we joyfully invite you to the wedding of",
     weddingDateEnglish: "FRIDAY · 11 DECEMBER 2026",
@@ -95,7 +115,7 @@ export const inviteData: WeddingData = {
       name: "Anurodh Yadav",
       relation: "Son of",
       parents: "Shree Raj Narayan Yadav\n& Mrs. Rita Yadav",
-      location: "Piradi Chowk, Janakapur",
+      location: "Piradi Chowk, Janakpur",
     },
   },
   celebrations: {
@@ -106,37 +126,37 @@ export const inviteData: WeddingData = {
         id: "mehendi",
         badgeDate: "10 DEC",
         title: "Mehendi",
-        fullDate: "Thrusday, 10 December 2026",
+        fullDate: "Thursday, 10 December 2026",
         time: "3:00 pm – 8:00 pm",
         description: "Henna, songs and the women of both families.",
-        venue: "Piradi Chowk, Janakapur",
-        mapUrl: "https://maps.google.com/?q=Baluwatar,+Kathmandu",
+        venue: "Piradi Chowk, Janakpur",
+        mapUrl: "https://maps.google.com/?q=Piradi+Chowk,+Janakpur",
         dressCodeText: "Shades of green",
-        dressCodePalette: ["#385a36", "#7e9554", "#d6cb96"],
+        dressCodePalette: ["#4a6147", "#859c6c", "#d5c89f"],
       },
       {
         id: "haldi",
         badgeDate: "10 DEC",
         title: "Haldi",
-        fullDate: "Thrusday, 10 December 2026",
+        fullDate: "Thursday, 10 December 2026",
         time: "10:00 am – 1:00 pm",
         description: "Turmeric for luck and glow, marigolds everywhere.",
-        venue: "Piradu Chowk, Janakapur",
-        mapUrl: "https://maps.google.com/?q=Baluwatar,+Kathmandu",
+        venue: "Piradi Chowk, Janakpur",
+        mapUrl: "https://maps.google.com/?q=Piradi+Chowk,+Janakpur",
         dressCodeText: "Yellow, and clothes you don’t mind staining",
-        dressCodePalette: ["#d98716", "#eab32a", "#faebd2"],
+        dressCodePalette: ["#d88c24", "#e8ba3b", "#f7ecd4"],
       },
       {
         id: "bibaha",
         badgeDate: "11 DEC",
         title: "Janti & Shubha Bibaha",
-        fullDate: "Friday, 11 DECEMBER 2026",
+        fullDate: "Friday, 11 December 2026",
         time: "10:30 am – 6:00 pm",
         description: "The procession, the Swayambar and the sacred fire.",
-        venue: "Piradi Chowk, Janakapur",
-        mapUrl: "https://maps.google.com/?q=Jawalakhel,+Lalitpur",
+        venue: "Piradi Chowk, Janakpur",
+        mapUrl: "https://maps.google.com/?q=Piradi+Chowk,+Janakpur",
         dressCodeText: "Traditional: daura suruwal, saree, dhaka",
-        dressCodePalette: ["#8f1c24", "#c49339", "#f4ecd7"],
+        dressCodePalette: ["#92242a", "#c49746", "#f5edd7"],
       },
     ],
   },
@@ -149,4 +169,3 @@ export const inviteData: WeddingData = {
     title: "Mangal Dhun / Wedding Sitar & Flute",
   },
 };
-

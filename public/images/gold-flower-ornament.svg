@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 120" fill="none" class="w-full h-auto">
+  <defs>
+    <linearGradient id="ornamentGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4af78"/>
+      <stop offset="50%" stop-color="#b68c52"/>
+      <stop offset="100%" stop-color="#9a713b"/>
+    </linearGradient>
+  </defs>
+
+  <g stroke="url(#ornamentGold)" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Center flower blossom -->
+    <path d="M80 65 C60 45 40 50 30 70 C45 80 65 75 80 65 Z" stroke-width="1.8" fill="#faf7f2" fill-opacity="0.9"/>
+    <path d="M80 65 C100 45 120 50 130 70 C115 80 95 75 80 65 Z" stroke-width="1.8" fill="#faf7f2" fill-opacity="0.9"/>
+    
+    <path d="M80 65 C70 35 90 15 105 25 C105 45 95 58 80 65 Z" stroke-width="1.8" fill="#faf7f2" fill-opacity="0.9"/>
+    <path d="M80 65 C90 35 70 15 55 25 C55 45 65 58 80 65 Z" stroke-width="1.8" fill="#faf7f2" fill-opacity="0.9"/>
+
+    <path d="M80 65 C75 85 65 105 50 110 C45 95 60 80 80 65 Z" stroke-width="1.8" fill="#faf7f2" fill-opacity="0.9"/>
+    <path d="M80 65 C85 85 95 105 110 110 C115 95 100 80 80 65 Z" stroke-width="1.8" fill="#faf7f2" fill-opacity="0.9"/>
+
+    <!-- Petal internal hatching -->
+    <path d="M72 50 Q55 52 42 65" stroke-width="0.8" fill="none"/>
+    <path d="M88 50 Q105 52 118 65" stroke-width="0.8" fill="none"/>
+    <path d="M78 40 Q70 28 62 26" stroke-width="0.8" fill="none"/>
+    <path d="M82 40 Q90 28 98 26" stroke-width="0.8" fill="none"/>
+
+    <!-- Stamens -->
+    <path d="M80 65 Q70 45 60 38" stroke-width="1.2" fill="none"/>
+    <circle cx="58" cy="36" r="2.5" fill="#b68c52"/>
+    <path d="M80 65 Q90 45 100 38" stroke-width="1.2" fill="none"/>
+    <circle cx="102" cy="36" r="2.5" fill="#b68c52"/>
+    <path d="M80 65 L80 42" stroke-width="1.2" fill="none"/>
+    <circle cx="80" cy="40" r="2.5" fill="#b68c52"/>
+
+    <!-- Side delicate vine flourishes -->
+    <path d="M30 70 C15 72 5 62 -2 50" stroke-width="1.2" fill="none"/>
+    <circle cx="-2" cy="50" r="1.5" fill="#b68c52"/>
+    <path d="M130 70 C145 72 155 62 162 50" stroke-width="1.2" fill="none"/>
+    <circle cx="162" cy="50" r="1.5" fill="#b68c52"/>
+  </g>
+</svg>
+

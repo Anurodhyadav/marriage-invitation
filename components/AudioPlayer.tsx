@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState, useCallback } from "react";
+import React, { useEffect, useRef, useCallback } from "react";
 import { Volume2, VolumeX } from "lucide-react";
 
 interface AudioPlayerProps {
@@ -57,7 +57,7 @@ export default function AudioPlayer({
         osc.frequency.setValueAtTime(noteFreq, ctx.currentTime);
 
         noteGain.gain.setValueAtTime(0.001, ctx.currentTime);
-        noteGain.gain.exponentialRampToValueAtTime(0.06, ctx.currentTime + 0.15);
+        noteGain.gain.exponentialRampToValueAtTime(0.05, ctx.currentTime + 0.15);
         noteGain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 1.2);
 
         osc.connect(noteGain);
@@ -92,13 +92,11 @@ export default function AudioPlayer({
       audio
         .play()
         .then(() => {
-          // If the audio file is just the tiny placeholder frame, also start mellow synth
           if (audio.duration < 1.0) {
             startSynthesizer();
           }
         })
         .catch(() => {
-          // Fallback to web audio synth
           startSynthesizer();
         });
     } else {
@@ -118,33 +116,33 @@ export default function AudioPlayer({
       <audio ref={audioRef} src={src} loop preload="auto" />
       
       {/* Floating Audio Controller */}
-      <div className="fixed bottom-5 left-5 z-50">
+      <div className="fixed bottom-5 left-5 z-40">
         <button
           type="button"
           onClick={() => onTogglePlay(!isPlaying)}
-          aria-label={isPlaying ? "Mute music" : "Play music"}
-          className={`group flex items-center gap-2 px-3.5 py-2.5 rounded-full shadow-lg border backdrop-blur-md transition-all duration-300 ${
+          aria-label={isPlaying ? "Mute wedding music" : "Play wedding music"}
+          className={`group flex items-center gap-2 px-3.5 py-2.5 rounded-full shadow-lg border backdrop-blur-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#8C6068] ${
             isPlaying
-              ? "bg-sage-800/90 text-white border-sage-700/80 hover:bg-sage-900"
-              : "bg-white/90 text-stone-700 border-stone-300 hover:bg-white"
+              ? "bg-[#6B2D35]/95 text-[#FFF8EC] border-[#8C6068] hover:bg-[#5A252C]"
+              : "bg-[#F5EEE6]/95 text-[#5A252C] border-[#8C6068]/40 hover:bg-white"
           }`}
         >
           {isPlaying ? (
             <>
-              <Volume2 className="w-4 h-4 text-gold-300 animate-pulse" />
+              <Volume2 className="w-4 h-4 text-[#FFF8EC] animate-pulse" />
               <div className="flex items-end gap-0.5 h-3">
-                <span className="w-0.5 bg-gold-300 rounded-full sound-bar-1" />
-                <span className="w-0.5 bg-gold-300 rounded-full sound-bar-2" />
-                <span className="w-0.5 bg-gold-300 rounded-full sound-bar-3" />
+                <span className="w-0.5 bg-[#FFF8EC] rounded-full sound-bar-1" />
+                <span className="w-0.5 bg-[#FFF8EC] rounded-full sound-bar-2" />
+                <span className="w-0.5 bg-[#FFF8EC] rounded-full sound-bar-3" />
               </div>
-              <span className="text-xs font-serif tracking-wider hidden sm:inline text-cream-100">
+              <span className="text-xs font-serif tracking-wider hidden sm:inline text-[#FFF8EC]">
                 Music Playing
               </span>
             </>
           ) : (
             <>
-              <VolumeX className="w-4 h-4 text-stone-500" />
-              <span className="text-xs font-serif tracking-wider hidden sm:inline text-stone-600">
+              <VolumeX className="w-4 h-4 text-[#8C6068]" />
+              <span className="text-xs font-serif tracking-wider hidden sm:inline text-[#5A252C]">
                 Music Off
               </span>
             </>
@@ -154,4 +152,3 @@ export default function AudioPlayer({
     </>
   );
 }
-

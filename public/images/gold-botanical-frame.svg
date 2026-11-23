@@ -1,0 +1,231 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 860" fill="none" class="w-full h-full">
+  <defs>
+    <linearGradient id="goldStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cfab72"/>
+      <stop offset="50%" stop-color="#b68c52"/>
+      <stop offset="100%" stop-color="#9a713b"/>
+    </linearGradient>
+    <linearGradient id="softGoldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdfcf9"/>
+      <stop offset="100%" stop-color="#f5efe4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ================= TOP-LEFT BOTANICAL CLUSTER ================= -->
+  <g id="top-left-botanical" stroke="url(#goldStroke)" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Main stem -->
+    <path d="M-20 -20 C40 60 70 140 90 230" stroke-width="2.5" fill="none"/>
+    <path d="M10 10 C60 100 120 180 210 210" stroke-width="1.8" fill="none"/>
+    
+    <!-- Large upper leaf -->
+    <path d="M-10 10 C40 40 80 100 85 160 C50 140 10 90 -10 10 Z" stroke-width="1.8" fill="#faf7f2" fill-opacity="0.85"/>
+    <path d="M0 20 Q50 90 85 160" stroke-width="1.2" fill="none"/>
+    <!-- Vein hatching -->
+    <path d="M15 45 Q35 48 45 60" stroke-width="0.8" fill="none"/>
+    <path d="M28 75 Q48 78 60 92" stroke-width="0.8" fill="none"/>
+    <path d="M42 105 Q60 110 72 125" stroke-width="0.8" fill="none"/>
+    <path d="M10 35 Q5 50 15 65" stroke-width="0.8" fill="none"/>
+    <path d="M22 65 Q18 80 30 95" stroke-width="0.8" fill="none"/>
+    <path d="M35 95 Q32 110 45 128" stroke-width="0.8" fill="none"/>
+
+    <!-- Cascading middle leaf -->
+    <path d="M20 70 C70 110 120 170 110 240 C80 200 45 150 20 70 Z" stroke-width="1.8" fill="#faf7f2" fill-opacity="0.85"/>
+    <path d="M35 90 Q75 160 110 240" stroke-width="1.2" fill="none"/>
+    <path d="M48 115 Q70 125 80 145" stroke-width="0.8" fill="none"/>
+    <path d="M60 145 Q82 158 92 180" stroke-width="0.8" fill="none"/>
+    <path d="M72 180 Q92 195 100 215" stroke-width="0.8" fill="none"/>
+    <path d="M40 110 Q40 130 52 150" stroke-width="0.8" fill="none"/>
+    <path d="M52 140 Q55 165 68 185" stroke-width="0.8" fill="none"/>
+    <path d="M65 175 Q70 200 82 220" stroke-width="0.8" fill="none"/>
+
+    <!-- Outer drooping leaf -->
+    <path d="M70 130 C120 160 170 210 175 270 C140 250 100 205 70 130 Z" stroke-width="1.6" fill="#faf7f2" fill-opacity="0.85"/>
+    <path d="M85 150 Q130 210 175 270" stroke-width="1" fill="none"/>
+    <path d="M100 175 Q125 185 138 205" stroke-width="0.75" fill="none"/>
+    <path d="M115 205 Q140 218 152 238" stroke-width="0.75" fill="none"/>
+    <path d="M90 170 Q95 190 108 212" stroke-width="0.75" fill="none"/>
+    <path d="M105 200 Q112 222 125 242" stroke-width="0.75" fill="none"/>
+
+    <!-- Lower long willow leaf -->
+    <path d="M30 190 C70 250 105 320 95 380 C70 330 45 270 30 190 Z" stroke-width="1.6" fill="#faf7f2" fill-opacity="0.85"/>
+    <path d="M42 215 Q72 290 95 380" stroke-width="1" fill="none"/>
+    <path d="M52 245 Q70 260 76 285" stroke-width="0.75" fill="none"/>
+    <path d="M60 280 Q78 300 84 325" stroke-width="0.75" fill="none"/>
+    <path d="M45 240 Q46 265 56 290" stroke-width="0.75" fill="none"/>
+    <path d="M54 280 Q56 305 66 330" stroke-width="0.75" fill="none"/>
+
+    <!-- Extended delicate stem reaching towards center -->
+    <path d="M95 240 C140 280 180 350 205 420" stroke-width="1.2" fill="none" opacity="0.7"/>
+    <path d="M120 280 C155 310 190 360 185 410 C160 380 135 340 120 280 Z" stroke-width="1.2" fill="#faf7f2" fill-opacity="0.75" opacity="0.85"/>
+  </g>
+
+  <!-- ================= TOP-RIGHT BOTANICAL CLUSTER ================= -->
+  <g id="top-right-botanical" stroke="url(#goldStroke)" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Main curving branch -->
+    <path d="M620 -20 C580 40 540 100 520 180 C505 240 515 310 540 370" stroke-width="2.2" fill="none"/>
+    
+    <!-- Top-most hanging leaf -->
+    <path d="M610 20 C570 50 515 90 490 145 C515 125 560 90 610 20 Z" stroke-width="1.8" fill="#faf7f2" fill-opacity="0.85"/>
+    <path d="M590 35 Q545 90 490 145" stroke-width="1.2" fill="none"/>
+    <path d="M570 55 Q550 68 535 88" stroke-width="0.8" fill="none"/>
+    <path d="M545 80 Q525 95 510 115" stroke-width="0.8" fill="none"/>
+    <path d="M575 45 Q565 60 552 75" stroke-width="0.8" fill="none"/>
+    <path d="M550 70 Q540 85 528 102" stroke-width="0.8" fill="none"/>
+
+    <!-- Middle prominent hanging leaf with intricate hatching -->
+    <path d="M555 110 C510 160 480 230 495 295 C515 245 545 185 555 110 Z" stroke-width="2" fill="#faf7f2" fill-opacity="0.9"/>
+    <path d="M545 135 Q508 215 495 295" stroke-width="1.2" fill="none"/>
+    <!-- Fine cross-hatching and vein details -->
+    <path d="M535 160 Q520 180 508 205" stroke-width="0.8" fill="none"/>
+    <path d="M525 190 Q512 212 503 238" stroke-width="0.8" fill="none"/>
+    <path d="M518 225 Q508 248 500 270" stroke-width="0.8" fill="none"/>
+    <path d="M542 150 Q535 170 526 195" stroke-width="0.8" fill="none"/>
+    <path d="M532 180 Q526 202 516 228" stroke-width="0.8" fill="none"/>
+    <path d="M524 212 Q518 235 510 258" stroke-width="0.8" fill="none"/>
+    <path d="M548 135 Q538 160 528 185" stroke-width="0.7" fill="none"/>
+    <path d="M538 165 Q530 190 518 215" stroke-width="0.7" fill="none"/>
+
+    <!-- Lower cascading leaf -->
+    <path d="M530 220 C545 280 575 330 610 375 C580 335 555 285 530 220 Z" stroke-width="1.8" fill="#faf7f2" fill-opacity="0.85"/>
+    <path d="M540 245 Q570 310 610 375" stroke-width="1.2" fill="none"/>
+    <path d="M550 268 Q565 285 578 308" stroke-width="0.8" fill="none"/>
+    <path d="M562 298 Q578 318 592 342" stroke-width="0.8" fill="none"/>
+    <path d="M542 260 Q550 280 562 305" stroke-width="0.8" fill="none"/>
+    <path d="M552 290 Q562 312 575 338" stroke-width="0.8" fill="none"/>
+  </g>
+
+  <!-- ================= BOTTOM-RIGHT GRAND LILY BLOSSOM ================= -->
+  <g id="bottom-right-flower" stroke="url(#goldStroke)" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Branch stems with budding flowers -->
+    <!-- Bud 1 -->
+    <path d="M480 680 C445 615 425 560 380 530" stroke-width="2" fill="none"/>
+    <!-- Bud 1 Pod -->
+    <path d="M380 530 C370 515 365 490 385 470 C405 480 405 510 395 525 Z" stroke-width="2" fill="#faf7f2" fill-opacity="0.9"/>
+    <!-- Bud calyx/anther tips -->
+    <path d="M385 470 L380 455 M385 470 L395 458" stroke-width="1.6"/>
+    <!-- Bud hatching -->
+    <path d="M378 510 Q385 495 395 480" stroke-width="1"/>
+    <path d="M385 520 Q390 505 400 492" stroke-width="0.8"/>
+
+    <!-- Bud 2 (Higher) -->
+    <path d="M435 595 C460 550 480 505 470 460" stroke-width="2" fill="none"/>
+    <!-- Bud 2 Pod -->
+    <path d="M470 460 C465 440 468 420 485 410 C500 420 495 445 482 458 Z" stroke-width="2" fill="#faf7f2" fill-opacity="0.9"/>
+    <path d="M485 410 L482 395 M485 410 L495 398" stroke-width="1.6"/>
+    <path d="M475 445 Q482 432 490 420" stroke-width="1"/>
+    <path d="M480 452 Q486 440 494 430" stroke-width="0.8"/>
+
+    <!-- Large Blooming Lily Blossom -->
+    <!-- Center flower base / stem -->
+    <path d="M530 880 C500 810 470 750 450 710" stroke-width="3" fill="none"/>
+
+    <!-- Top Left Petal -->
+    <path d="M450 710 C410 685 365 710 340 735 C365 770 410 770 455 750 Z" stroke-width="2.5" fill="#faf7f2" fill-opacity="0.95"/>
+    <path d="M440 718 Q385 725 340 735" stroke-width="1.4" fill="none"/>
+    <!-- Hatching lines inside petal -->
+    <path d="M425 715 Q395 728 365 745" stroke-width="0.8" fill="none"/>
+    <path d="M410 712 Q385 730 355 752" stroke-width="0.8" fill="none"/>
+    <path d="M395 715 Q375 735 348 760" stroke-width="0.8" fill="none"/>
+    <path d="M435 730 Q405 745 375 765" stroke-width="0.8" fill="none"/>
+    <path d="M445 740 Q420 755 390 770" stroke-width="0.8" fill="none"/>
+
+    <!-- Upper Center Petal (Curving back) -->
+    <path d="M465 700 C460 635 485 580 535 565 C540 625 520 675 485 710 Z" stroke-width="2.5" fill="#faf7f2" fill-opacity="0.95"/>
+    <path d="M472 685 Q495 625 535 565" stroke-width="1.4" fill="none"/>
+    <path d="M468 660 Q490 610 520 580" stroke-width="0.8" fill="none"/>
+    <path d="M475 640 Q498 595 530 575" stroke-width="0.8" fill="none"/>
+    <path d="M485 675 Q505 635 528 600" stroke-width="0.8" fill="none"/>
+    <path d="M495 690 Q515 650 532 620" stroke-width="0.8" fill="none"/>
+
+    <!-- Right Large Petal -->
+    <path d="M490 715 C540 690 600 705 630 735 C615 780 560 800 485 765 Z" stroke-width="2.5" fill="#faf7f2" fill-opacity="0.95"/>
+    <path d="M495 725 Q565 720 630 735" stroke-width="1.4" fill="none"/>
+    <path d="M510 715 Q570 725 615 745" stroke-width="0.8" fill="none"/>
+    <path d="M525 712 Q580 730 620 760" stroke-width="0.8" fill="none"/>
+    <path d="M500 740 Q555 750 600 775" stroke-width="0.8" fill="none"/>
+    <path d="M490 755 Q535 770 580 790" stroke-width="0.8" fill="none"/>
+
+    <!-- Bottom Left Large Petal (Flowing outward) -->
+    <path d="M440 755 C390 780 345 830 365 890 C410 880 445 845 470 790 Z" stroke-width="2.5" fill="#faf7f2" fill-opacity="0.95"/>
+    <path d="M445 770 Q395 825 365 890" stroke-width="1.4" fill="none"/>
+    <path d="M428 775 Q385 830 380 875" stroke-width="0.8" fill="none"/>
+    <path d="M415 785 Q375 840 370 885" stroke-width="0.8" fill="none"/>
+    <path d="M450 795 Q420 840 405 880" stroke-width="0.8" fill="none"/>
+    <path d="M460 815 Q435 855 425 880" stroke-width="0.8" fill="none"/>
+
+    <!-- Bottom Center Petal -->
+    <path d="M470 780 C475 840 460 900 440 940 C490 920 520 860 500 790 Z" stroke-width="2.5" fill="#faf7f2" fill-opacity="0.95"/>
+    <path d="M480 790 Q475 865 440 940" stroke-width="1.4" fill="none"/>
+    <path d="M470 810 Q465 870 445 920" stroke-width="0.8" fill="none"/>
+    <path d="M485 810 Q485 870 465 925" stroke-width="0.8" fill="none"/>
+
+    <!-- Prominent Exquisite Stamens and Pistil -->
+    <g stroke-width="1.8">
+      <!-- Stamen 1 -->
+      <path d="M465 730 C450 670 415 620 370 590" fill="none"/>
+      <ellipse cx="365" cy="587" rx="8" ry="4" transform="rotate(-30 365 587)" fill="#b68c52"/>
+      
+      <!-- Stamen 2 -->
+      <path d="M470 730 C475 660 460 590 425 540" fill="none"/>
+      <ellipse cx="422" cy="535" rx="8" ry="4" transform="rotate(-45 422 535)" fill="#b68c52"/>
+
+      <!-- Stamen 3 -->
+      <path d="M475 730 C500 650 515 570 505 510" fill="none"/>
+      <ellipse cx="504" cy="505" rx="8" ry="4" transform="rotate(15 504 505)" fill="#b68c52"/>
+
+      <!-- Stamen 4 -->
+      <path d="M475 735 C520 675 565 620 605 585" fill="none"/>
+      <ellipse cx="608" cy="582" rx="8" ry="4" transform="rotate(40 608 582)" fill="#b68c52"/>
+    </g>
+  </g>
+
+  <!-- ================= BOTTOM-LEFT BOTANICAL FLOWER ================= -->
+  <g id="bottom-left-flower" stroke="url(#goldStroke)" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Stem reaching from corner -->
+    <path d="M-20 880 C20 830 50 780 70 730" stroke-width="2.5" fill="none"/>
+    <!-- Branch with flower bud -->
+    <path d="M40 760 C45 710 60 660 50 610" stroke-width="1.8" fill="none"/>
+    <path d="M50 610 C45 595 48 575 65 565 C80 575 75 600 62 612 Z" stroke-width="1.8" fill="#faf7f2" fill-opacity="0.9"/>
+    <path d="M65 565 L62 550 M65 565 L75 553" stroke-width="1.4"/>
+    <path d="M55 595 Q62 582 70 570" stroke-width="0.8"/>
+
+    <!-- Secondary small bud -->
+    <path d="M25 780 C15 740 5 700 -5 665" stroke-width="1.6" fill="none"/>
+    <path d="M-5 665 C-10 652 -7 635 8 628 C20 638 18 658 5 668 Z" stroke-width="1.6" fill="#faf7f2" fill-opacity="0.9"/>
+    <path d="M8 628 L6 615 M8 628 L16 618" stroke-width="1.2"/>
+
+    <!-- Flower Petals -->
+    <!-- Petal 1 (Top Left) -->
+    <path d="M70 730 C50 690 10 695 -10 720 C0 750 35 755 70 740 Z" stroke-width="2" fill="#faf7f2" fill-opacity="0.95"/>
+    <path d="M60 732 Q25 715 -10 720" stroke-width="1.2" fill="none"/>
+    <path d="M50 728 Q25 710 5 725" stroke-width="0.8" fill="none"/>
+    <path d="M45 738 Q20 730 0 745" stroke-width="0.8" fill="none"/>
+
+    <!-- Petal 2 (Top Right) -->
+    <path d="M75 725 C80 675 110 640 145 645 C140 685 115 715 85 735 Z" stroke-width="2" fill="#faf7f2" fill-opacity="0.95"/>
+    <path d="M80 720 Q110 670 145 645" stroke-width="1.2" fill="none"/>
+    <path d="M78 705 Q102 665 130 655" stroke-width="0.8" fill="none"/>
+    <path d="M88 715 Q115 680 140 668" stroke-width="0.8" fill="none"/>
+
+    <!-- Petal 3 (Right) -->
+    <path d="M85 740 C125 730 165 750 180 780 C155 810 115 810 80 765 Z" stroke-width="2" fill="#faf7f2" fill-opacity="0.95"/>
+    <path d="M88 748 Q135 755 180 780" stroke-width="1.2" fill="none"/>
+    <path d="M95 740 Q135 745 165 765" stroke-width="0.8" fill="none"/>
+    <path d="M90 762 Q125 775 155 800" stroke-width="0.8" fill="none"/>
+
+    <!-- Petal 4 (Bottom Left) -->
+    <path d="M65 750 C30 765 0 805 10 845 C45 840 65 810 80 770 Z" stroke-width="2" fill="#faf7f2" fill-opacity="0.95"/>
+    <path d="M68 760 Q35 800 10 845" stroke-width="1.2" fill="none"/>
+    <path d="M55 765 Q30 805 20 838" stroke-width="0.8" fill="none"/>
+    <path d="M70 780 Q50 815 35 842" stroke-width="0.8" fill="none"/>
+
+    <!-- Stamens -->
+    <g stroke-width="1.5">
+      <path d="M75 735 C80 690 95 650 115 625" fill="none"/>
+      <ellipse cx="117" cy="622" rx="5" ry="3" transform="rotate(35 117 622)" fill="#b68c52"/>
+      <path d="M70 735 C55 690 40 655 20 635" fill="none"/>
+      <ellipse cx="18" cy="633" rx="5" ry="3" transform="rotate(-30 18 633)" fill="#b68c52"/>
+    </g>
+  </g>
+</svg>
+
