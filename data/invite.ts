@@ -36,13 +36,13 @@ export interface WeddingData {
     month: string; // "DEC"
     dayNumber: string; // "11"
     year: string; // "2026"
-    yearInWords: string; // "TWO THOUSAND TWENTY SIX"
+    yearInWords?: string; // "TWO THOUSAND TWENTY SIX"
     timeInWords: string; // "AT TEN O'CLOCK IN THE MORNING"
     venueName: string; // "PIRADI CHOWK"
     venueLocation: string; // "JANAKPUR, NEPAL"
-    receptionNote: string; // "reception to follow"
+    receptionNote?: string; // "reception to follow"
     openWithMusicButton: string; // "OPEN THE INVITATION"
-    openWithoutMusicLink: string; // "Open without music"
+    openWithoutMusicLink?: string; // "Open without music"
   };
   hero: {
     shubhaBibaha: string; // "शुभ विवाह"

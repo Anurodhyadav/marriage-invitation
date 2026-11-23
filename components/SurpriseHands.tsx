@@ -157,15 +157,15 @@ const css = `
 }
 
 .hj-band {
-  animation: hj-sway 3.6s 1.7s ease-in-out both;
+  animation: hj-sway 5s ease-in-out infinite;
 }
 
 @keyframes hj-sway {
-  0% { transform: translateX(0); }
-  25% { transform: translateX(calc(var(--a) * 2.8px)); }
-  50% { transform: translateX(calc(var(--a) * .6px)); }
-  75% { transform: translateX(calc(var(--a) * 2.4px)); }
-  100% { transform: translateX(0); }
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(calc(var(--a) * 2.8px)); }
+  40% { transform: translateX(calc(var(--a) * .6px)); }
+  60% { transform: translateX(calc(var(--a) * 2.4px)); }
+  80% { transform: translateX(0); }
 }
 
 /* Frequent, radiant ring sparkle animation (~1.6s rapid cycle) */
