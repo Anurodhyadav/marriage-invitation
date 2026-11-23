@@ -7,6 +7,7 @@ import SurpriseHands from "@/components/SurpriseHands";
 import HeroSection from "@/components/HeroSection";
 import FamiliesSection from "@/components/FamiliesSection";
 import CelebrationsSection from "@/components/CelebrationsSection";
+import LocationSection from "@/components/LocationSection";
 import FooterSection from "@/components/FooterSection";
 import AudioPlayer from "@/components/AudioPlayer";
 import { ChevronUp, X } from "lucide-react";
@@ -93,7 +94,12 @@ export default function WeddingInvitationPage() {
             <CelebrationsSection data={inviteData} />
           </div>
 
-          {/* Section 5: Footer Section with Floral Corner Sprigs */}
+          {/* Section 5: The Location & Directions Section */}
+          <div className="w-full">
+            <LocationSection data={inviteData} />
+          </div>
+
+          {/* Section 6: Footer Section with Floral Corner Sprigs */}
           <div className="w-full">
             <FooterSection data={inviteData} />
           </div>

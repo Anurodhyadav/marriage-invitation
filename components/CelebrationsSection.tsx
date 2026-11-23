@@ -187,7 +187,7 @@ function TimelineEventItem({
 
         {/* Row 2: Full date & Weekday with scroll slide-up reveal */}
         <div
-          className="flex items-baseline justify-between gap-3 mb-2 transition-all duration-700 ease-out"
+          className="flex items-baseline justify-between gap-3 transition-all duration-700 ease-out"
           style={{
             opacity: isVisible ? 1 : 0,
             transform: isVisible ? "translateY(0)" : "translateY(18px)",
@@ -200,20 +200,6 @@ function TimelineEventItem({
           <span className="font-serif text-xs sm:text-sm text-[#5A252C] font-semibold tracking-[0.15em] uppercase">
             {weekday}
           </span>
-        </div>
-
-        {/* Row 3: Venue in muted-maroon serif with scroll slide-up reveal */}
-        <div
-          className="transition-all duration-700 ease-out"
-          style={{
-            opacity: isVisible ? 1 : 0,
-            transform: isVisible ? "translateY(0)" : "translateY(18px)",
-            transitionDelay: `${index * 90 + 200}ms`,
-          }}
-        >
-          <p className="font-serif text-sm sm:text-[15px] text-[#8C6068] font-normal">
-            {event.venue}
-          </p>
         </div>
 
         {/* Subtle divider between items for mobile clarity */}
