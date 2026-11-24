@@ -36,7 +36,7 @@ export default function LocationSection({ data }: LocationSectionProps) {
   const venue = data.celebrations.events[0]?.venue || "Piradi Chowk, Janakpur";
   const mapUrl =
     data.celebrations.events[0]?.mapUrl ||
-    "https://maps.app.goo.gl/41C52SgZAPXHz4q58";
+    "https://maps.app.goo.gl/txKwRGEeYqRQtUuaA";
 
   return (
     <section
@@ -84,35 +84,20 @@ export default function LocationSection({ data }: LocationSectionProps) {
 
           {/* Venue Name */}
           <h3 className="font-serif text-2xl sm:text-[26px] font-bold text-[#6B2D35] tracking-wide mb-1">
-            Piradi Chowk
+            Sabaila-11, Inarwa
           </h3>
 
           {/* City / Country */}
           <p className="font-serif text-xs sm:text-sm uppercase tracking-[0.22em] text-[#8C6068] font-semibold mb-2">
-            Janakpur, Nepal
+            Dhanusa, Nepal
           </p>
 
           {/* Explanatory note */}
           <p className="font-serif italic text-xs sm:text-sm text-[#5A252C] max-w-[290px] mb-5 leading-relaxed">
-            All wedding ceremonies (Mehendi, Haldi, Janti &amp; Shubha Bibaha) will take place at this venue.
+            All wedding ceremonies (Mehendi, Haldi &amp; Shubha Bibaha) will take place at this venue.
           </p>
 
-          {/* Embedded Google Map Preview */}
-          {/* <div className="w-full h-44 sm:h-52 rounded-2xl overflow-hidden border border-[#8C6068]/20 shadow-inner mb-5 relative bg-[#EFE9DF]">
-            <iframe
-              src="https://maps.google.com/maps?q=Piradi+Chowk,+Janakpur,+Nepal&t=&z=15&ie=UTF8&iwloc=&output=embed"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen={false}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Piradi Chowk, Janakpur Location Map"
-              className="w-full h-full filter saturate-[0.95] contrast-[1.02]"
-            />
-          </div> */}
-
-          {/* Get Directions Button */}
+          
           <a
             href={mapUrl}
             target="_blank"
