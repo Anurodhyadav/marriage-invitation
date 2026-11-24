@@ -14,6 +14,8 @@ export interface EventItem {
 export interface FamilyPerson {
   role: string; // "THE BRIDE" or "THE GROOM"
   name: string;
+  qualification?: string; // e.g. "BBA" or "Software Engineer"
+  company?: string; // e.g. "Fetchly LLC"
   relation: string; // "Daughter of" or "Son of"
   parents: string; // e.g. "Shree Jibachh Yadav & Mrs. Ambika Yadav"
   location: string; // e.g. "Sabaila 11, Inarwa"
@@ -103,6 +105,8 @@ export const inviteData: WeddingData = {
     bride: {
       role: "THE BRIDE",
       name: "Sanjana Yadav",
+      qualification: "BBA",
+      // company: "Formerly at RBB",
       relation: "Daughter of",
       parents: "Shree Jibachh Yadav\n& Mrs. Ambika Yadav",
       location: "Sabaila 11, Inarwa",
@@ -110,6 +114,8 @@ export const inviteData: WeddingData = {
     groom: {
       role: "THE GROOM",
       name: "Anurodh Yadav",
+      qualification: "Software Engineer",
+      company: "Fetchly, LLC",
       relation: "Son of",
       parents: "Shree Raj Narayan Yadav\n& Mrs. Rita Yadav",
       location: "Piradi Chowk, Janakpur",

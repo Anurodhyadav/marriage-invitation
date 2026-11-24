@@ -315,9 +315,25 @@ export default function FamiliesSection({ data }: FamiliesSectionProps) {
             </p>
 
             {/* Name */}
-            <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#6B2D35] leading-snug mb-2">
+            <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#6B2D35] leading-snug mb-1">
               {bride.name}
             </h3>
+
+            {/* Qualification / Profession */}
+            {(bride.qualification || bride.company) && (
+              <div className="-mt-0.5 mb-2.5 flex flex-col items-center">
+                {bride.qualification && (
+                  <p className="font-serif text-xs sm:text-[13px] text-[#8C6068] font-medium tracking-wide whitespace-pre-line leading-tight">
+                    {bride.qualification}
+                  </p>
+                )}
+                {bride.company && (
+                  <p className="font-serif text-[11px] sm:text-xs text-[#8C6068] font-normal tracking-wider mt-0.5">
+                    {bride.company}
+                  </p>
+                )}
+              </div>
+            )}
 
             {/* Daughter of */}
             <p className="font-serif italic text-xs sm:text-sm text-[#8C6068] mb-1">
@@ -362,9 +378,25 @@ export default function FamiliesSection({ data }: FamiliesSectionProps) {
             </p>
 
             {/* Name */}
-            <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#6B2D35] leading-snug mb-2">
+            <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#6B2D35] leading-snug mb-1">
               {groom.name}
             </h3>
+
+            {/* Qualification / Profession */}
+            {(groom.qualification || groom.company) && (
+              <div className="-mt-0.5 mb-2.5 flex flex-col items-center">
+                {groom.qualification && (
+                  <p className="font-serif text-xs sm:text-[13px] text-[#8C6068] font-medium tracking-wide whitespace-pre-line leading-tight">
+                    {groom.qualification}
+                  </p>
+                )}
+                {groom.company && (
+                  <p className="font-serif text-[11px] sm:text-xs text-[#8C6068] font-normal tracking-wider mt-0.5">
+                    {groom.company}
+                  </p>
+                )}
+              </div>
+            )}
 
             {/* Son of */}
             <p className="font-serif italic text-xs sm:text-sm text-[#8C6068] mb-1">
