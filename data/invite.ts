@@ -136,7 +136,7 @@ export const inviteData: WeddingData = {
         badgeDate: "10 DEC",
         title: "Mehendi",
         fullDate: "Thursday, 24th Mangsir 2083",
-        time: "5:00 pm – 8:00 pm",
+        time: "4:00 pm – 8:00 pm",
         description: "Henna, songs and the women of both families.",
         venue: "Inarwa, Dhanusa",
         mapUrl: "https://maps.app.goo.gl/txKwRGEeYqRQtUuaA",
