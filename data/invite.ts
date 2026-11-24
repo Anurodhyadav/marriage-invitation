@@ -158,7 +158,7 @@ export const inviteData: WeddingData = {
       {
         id: "bibaha",
         badgeDate: "11 DEC",
-        title: "Janti & Shubha Bibaha",
+        title: "Janti, Bhoj & Shubha Bibaha",
         fullDate: "Friday, 25th Mangsir 2083",
         time: "10:00 am – 6:00 pm",
         description: "The procession, the Swayambar and the sacred fire.",
