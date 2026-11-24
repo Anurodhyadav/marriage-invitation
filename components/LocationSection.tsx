@@ -92,7 +92,6 @@ export default function LocationSection({ data }: LocationSectionProps) {
             Dhanusa, Nepal
           </p>
 
-          {/* Explanatory note */}
           <p className="font-serif italic text-xs sm:text-sm text-[#5A252C] max-w-[290px] mb-5 leading-relaxed">
             All wedding ceremonies (Mehendi, Haldi &amp; Shubha Bibaha) will take place at this venue.
           </p>
