@@ -106,7 +106,7 @@ export const inviteData: WeddingData = {
       role: "THE BRIDE",
       name: "Sanjana Yadav",
       qualification: "BBA",
-      // company: "Formerly at RBB",
+      company: "Formerly at RBB",
       relation: "Daughter of",
       parents: "Shree Jibachh Yadav\n& Mrs. Ambika Yadav",
       location: "Sabaila 11, Inarwa",
